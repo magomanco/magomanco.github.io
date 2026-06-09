@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imago Actio | Produção Visual</title>
+    <!-- Importando a fonte futurista e geométrica do Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
@@ -21,69 +25,79 @@
             justify-content: center;
             min-height: 100vh;
             padding: 20px;
+            font-family: 'Montserrat', sans-serif;
         }
 
         .container {
             width: 100%;
             max-width: 450px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .profile-area {
             margin-bottom: 30px;
-        }
-
-        .logo-placeholder {
-            width: 110px;
-            height: 110px;
-            background-color: #16171f;
-            border: 3px solid #00d2ff;
-            border-radius: 50%;
-            margin: 0 auto 15px;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            font-weight: 800;
-            font-size: 26px;
-            color: #ffffff;
-            letter-spacing: 1px;
-            box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
         }
 
-        h1 {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 8px;
-            letter-spacing: 2px;
-        }
-
-        p.subtitle {
-            color: #00d2ff;
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            text-transform: uppercase;
+        /* Ajuste fino e centralização da sua imagem logo.jpg */
+        .logo-img {
+            width: 130px;       
+            height: 130px;      
+            object-fit: contain;
             margin-bottom: 20px;
+            border-radius: 12px; /* Deixa os cantos da imagem levemente arredondados */
+        }
+
+        /* TÍTULO IGUAL À LOGO: Fonte robusta, quadrada e imponente */
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            margin-bottom: 8px;
+            letter-spacing: 4px; /* Afastamento das letras para dar o visual da logo */
+            color: #ffffff;
+        }
+
+        /* SUBTÍTULO: Vídeos • Fotos • Edição em Azul Ciano */
+        p.subtitle {
+            font-family: 'Montserrat', sans-serif;
+            color: #00d2ff;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 5px; /* Bem espaçado como o rodapé de marcas de mídia */
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            padding-left: 5px; /* Compensa o espaçamento da última letra para manter centralizado */
         }
 
         .links-area {
             display: flex;
             flex-direction: column;
             gap: 16px;
+            width: 100%; 
+            align-items: center; 
         }
 
         .btn-link {
             display: block;
-            width: 100%;
+            width: 100%; 
             padding: 16px;
             color: #ffffff;
             text-decoration: none;
             background-color: #16171f;
             border: 1px solid #282a36;
             border-radius: 8px;
-            font-size: 16px;
-            font-weight: 600;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 1px;
             transition: all 0.3s ease;
+            text-align: center; 
+            text-transform: uppercase; /* Botões em letras maiúsculas para combinar com o estilo */
         }
 
         .btn-link:hover {
@@ -107,9 +121,11 @@
 
         footer {
             margin-top: 50px;
-            font-size: 11px;
+            font-size: 10px;
             color: #4a4d5e;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            text-transform: uppercase;
         }
     </style>
 </head>
@@ -117,8 +133,9 @@
 
     <div class="container">
         <div class="profile-area">
-            <!-- Iniciais da sua marca com o círculo no azul da logo -->
-            <img src="logo.jpg" alt="Imago Actio" style="whidth:110px;height:auto; margin-bottom:15px;">
+            <!-- Puxando a sua logo.jpg salva no repositório -->
+            <img src="logo.jpg" alt="Imago Actio" class="logo-img">
+            
             <h1>IMAGO ACTIO</h1>
             <p class="subtitle">Vídeos • Fotos • Edição</p>
         </div>
@@ -143,10 +160,9 @@
         </div>
 
         <footer>
-            &copy; 2026 IMAGO ACTIO. Todos os direitos reservados.
+            &copy; 2026 IMAGO ACTIO.
         </footer>
     </div>
 
 </body>
 </html>
-
