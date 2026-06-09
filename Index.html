@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imago Actio | Produção Visual</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0c0d12;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        .profile-area {
+            margin-bottom: 30px;
+        }
+
+        .logo-placeholder {
+            width: 110px;
+            height: 110px;
+            background-color: #16171f;
+            border: 3px solid #00d2ff;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 26px;
+            color: #ffffff;
+            letter-spacing: 1px;
+            box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+        }
+
+        p.subtitle {
+            color: #00d2ff;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .links-area {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .btn-link {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            color: #ffffff;
+            text-decoration: none;
+            background-color: #16171f;
+            border: 1px solid #282a36;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-link:hover {
+            background-color: #1e202b;
+            border-color: #00d2ff;
+            transform: translateY(-2px);
+        }
+
+        /* Botão de Destaque - Azul Ciano da sua Marca */
+        .btn-highlight {
+            background-color: #00d2ff;
+            color: #0c0d12;
+            border: none;
+        }
+
+        .btn-highlight:hover {
+            background-color: #00b4dc;
+            color: #0c0d12;
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 11px;
+            color: #4a4d5e;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-area">
+            <!-- Iniciais da sua marca com o círculo no azul da logo -->
+            <img src="logo.png" alt="Imago Actio" style="whidth:110px;height:auto; margin-bottom:15px;">
+            <h1>IMAGO ACTIO</h1>
+            <p class="subtitle">Vídeos • Fotos • Edição</p>
+        </div>
+
+        <div class="links-area">
+            <!-- Ajuste com seu número real (DDD + Número) -->
+            <a href="https://wa.me." target="_blank" class="btn-link btn-highlight">
+                ⚡ Agendar Ensaio / Orçamento
+            </a>
+
+            <a href="https://instagram.com" target="_blank" class="btn-link">
+                📸 Siga no Instagram
+            </a>
+
+            <a href="#" target="_blank" class="btn-link">
+                ⚽ Portfólio Esportivo
+            </a>
+
+            <a href="#" target="_blank" class="btn-link">
+                🎬 Reels & Conteúdo Digital
+            </a>
+        </div>
+
+        <footer>
+            &copy; 2026 IMAGO ACTIO. Todos os direitos reservados.
+        </footer>
+    </div>
+
+</body>
+</html>
+
