@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imago Actio | Produção Visual</title>
-    <!-- Importando a fonte futurista e geométrica do Google Fonts -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     
     <style>
         * {
@@ -35,6 +34,114 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        .profile-area {
+            margin-bottom: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* LOGO AMPLIADO: Ocupa o topo com destaque e clareza */
+        .logo-img {
+            width: 85%;          /* Deixa o logo grande e imponente na tela do celular */
+            max-width: 320px;    /* Evita que fique gigante em telas maiores */
+            height: auto;      
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .links-area {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 100%; 
+            align-items: center; 
+        }
+
+        .btn-link {
+            display: block;
+            width: 100%; 
+            padding: 18px; /* Botões ligeiramente mais robustos e fáceis de clicar */
+            color: #ffffff;
+            text-decoration: none;
+            background-color: #16171f;
+            border: 1px solid #282a36;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            transition: all 0.3s ease;
+            text-align: center; 
+            text-transform: uppercase;
+        }
+
+        .btn-link:hover {
+            background-color: #1e202b;
+            border-color: #00d2ff;
+            transform: translateY(-2px);
+        }
+
+        /* Botão de Destaque - Azul Ciano idêntico ao da sua marca */
+        .btn-highlight {
+            background-color: #00d2ff;
+            color: #0c0d12;
+            border: none;
+        }
+
+        .btn-highlight:hover {
+            background-color: #00b4dc;
+            color: #0c0d12;
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 10px;
+            color: #4a4d5e;
+            letter-spacing: 2px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-area">
+            <!-- Sua logo oficial com o tamanho corrigido -->
+            <img src="logo.jpg" alt="Imago Actio" class="logo-img">
+        </div>
+
+        <div class="links-area">
+            <!-- Lembre-se de ajustar com seu número real de WhatsApp quando puder -->
+            <a href="https://wa.me." target="_blank" class="btn-link btn-highlight">
+                ⚡ Agendar Ensaio / Orçamento
+            </a>
+
+            <a href="https://instagram.com" target="_blank" class="btn-link">
+                📸 Siga no Instagram
+            </a>
+
+            <a href="#" target="_blank" class="btn-link">
+                ⚽ Portfólio Esportivo
+            </a>
+
+            <a href="#" target="_blank" class="btn-link">
+                🎬 Reels & Conteúdo Digital
+            </a>
+        </div>
+
+        <footer>
+            &copy; 2026 IMAGO ACTIO.
+        </footer>
+    </div>
+
+</body>
+</html>
+align-items: center;
         }
 
         .profile-area {
