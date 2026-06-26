@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Esportivo | Imago Actio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: #0c0d12;
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header-area {
+            text-align: center;
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+        .header-area h1 {
+            font-size: 24px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #00d2ff; /* Azul Ciano da sua marca */
+        }
+        .header-area p {
+            font-size: 14px;
+            color: #4a4d5e;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        /* Grid Responsivo para Fotos */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1100px;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid #282a36;
+            background-color: #16171f;
+            aspect-ratio: 1 / 1; /* Transforma as fotos em quadrados perfeitos */
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Corta a imagem sem distorcer para caber no quadrado */
+            transition: transform 0.3s ease;
+            display: block;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05); /* Efeito sutil de zoom ao passar o mouse */
+        }
+        .btn-back {
+            margin-top: 50px;
+            display: inline-block;
+            padding: 14px 30px;
+            color: #ffffff;
+            text-decoration: none;
+            background-color: #16171f;
+            border: 1px solid #282a36;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+        .btn-back:hover {
+            border-color: #00d2ff;
+            background-color: #1e202b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-area">
+        <h1>Portfólio Esportivo</h1>
+        <p>Ação, movimento e performance em foco</p>
+    </div>
+
+    <!-- Substitua o "src" pelo caminho real das suas fotos -->
+    <div class="gallery-grid">
+        <div class="gallery-item"><img src="foto1.jpg" alt="Ação Esportiva"></div>
+        <div class="gallery-item"><img src="foto2.jpg" alt="Ação Esportiva"></div>
+        <div class="gallery-item"><img src="foto3.jpg" alt="Ação Esportiva"></div>
+        <div class="gallery-item"><img src="foto4.jpg" alt="Ação Esportiva"></div>
+        <div class="gallery-item"><img src="foto5.jpg" alt="Ação Esportiva"></div>
+        <div class="gallery-item"><img src="foto6.jpg" alt="Ação Esportiva"></div>
+    </div>
+
+    <a href="../" class="btn-back">⬅ Voltar aos Links</a>
+
+</body>
+</html>
